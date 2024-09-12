@@ -13,13 +13,18 @@ const options = {
     pageSize: 4096
 };
 
-const connectDB = (callback) => {
-    Firebird.attach(options, (err, db) => {
-        if (err) {
-            console.error('Erro ao conectar ao Firebird: ' + err);
-            process.exit(1);
-        }
-        callback(db);
+// Função de conexão usando async/await
+const connectDB = () => {
+    return new Promise((resolve, reject) => {
+        Firebird.attach(options, (err, db) => {
+            if (err) {
+                console.error('Erro ao conectar ao Firebird:', err);
+                reject(err);
+            } else {
+                console.log('Conexão com o banco de dados estabelecida com sucesso');
+                resolve(db);
+            }
+        });
     });
 };
 

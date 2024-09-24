@@ -1,0 +1,78 @@
+/* src/styles/Dashboard.css */
+
+/* Estilos para a página do dashboard */
+.dashboard-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-right: 20px;
+}
+
+.filter label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.filter select {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.custom-date-filter {
+    display: flex;
+    align-items: center;
+}
+
+.custom-date-filter label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.custom-date-filter input {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.custom-date-filter button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-date-filter button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o conteúdo */
+.horizontal-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

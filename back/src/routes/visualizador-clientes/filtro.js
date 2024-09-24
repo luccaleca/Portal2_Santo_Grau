@@ -23,7 +23,8 @@ const executeQuery = async (query, params) => {
 };
 
 // Rota para o filtro do visualizador de clientes
-router.get('/visualizador_clientes/filtro', async (req, res) => {
+// Rota para o filtro do visualizador de clientes
+router.get('/filtro', async (req, res) => {
     const { dataInicio, dataFim } = req.query;
 
     if (!dataInicio || !dataFim) {

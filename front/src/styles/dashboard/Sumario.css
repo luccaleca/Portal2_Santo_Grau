@@ -1,0 +1,51 @@
+/* src/styles/Sumario.css */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    max-width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  
+  .card div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  /* Estilos para o progresso */
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .percent-text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .percent-over {
+    font-size: 16px;
+    color: #dc3545;
+  }
+  

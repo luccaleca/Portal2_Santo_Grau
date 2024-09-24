@@ -1,0 +1,34 @@
+/* src/styles/index.module.css */
+
+.index-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.index-page h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.index-page p {
+    font-size: 18px;
+    color: #666;
+}
+
+.index-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-page ul li {
+    margin: 10px 0;
+}
+
+.index-page ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.index-page ul li a:hover {
+    text-decoration: underline;
+}

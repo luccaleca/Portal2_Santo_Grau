@@ -1,0 +1,45 @@
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Garante largura fixa nas colunas */
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: 25%; /* Define a largura fixa de cada coluna */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6c757d;
+    color: white;
+}

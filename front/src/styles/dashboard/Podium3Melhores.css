@@ -1,0 +1,72 @@
+/* src/styles/Podium3Melhores.css */
+.podium-wrapper {
+    background-color: white; /* Fundo branco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ced4da;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.podium-container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.podium-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    margin: 0 10px;
+}
+
+.first-place {
+    background-color: #ffd700; /* Cor do ouro */
+    height: 240px;
+    transform: translateY(-20px); /* Sobe o primeiro lugar */
+    order: 1; /* Mantém o primeiro lugar no meio */
+}
+
+.second-place {
+    background-color: #c0c0c0; /* Cor da prata */
+    height: 200px;
+    order: 0; /* Move o segundo lugar para a esquerda */
+}
+
+.third-place {
+    background-color: #cd7f32; /* Cor do bronze */
+    height: 180px;
+    order: 2; /* Move o terceiro lugar para a direita */
+}
+
+.podium-rank {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.podium-vendedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.podium-info {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    font-weight: bold;
+}

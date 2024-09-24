@@ -20,11 +20,12 @@ app.use('/uploads', express.static(path.resolve(__dirname, '../uploads')));
 const authRoutes = require('./routes/auth/auth'); 
 
 const filtrosDashboardRoutes = require('./routes/dashboard/filtros');
-const filtrosVisualizadorClientesRoutes = require('./routes/visualizador_clientes/filtro');
+const filtrosVisualizadorClientesRoutes = require('./routes/visualizador-clientes/filtro');
 
-const adicionarPromocaoRouter = require('./routes/promocoes/adicionar_promo');
-const deletarPromocaoRouter = require('./routes/promocoes/deletar_promo');
-const filtrarPromocaoRouter = require('./routes/promocoes/filtrar_promo');
+const promocoesRouter = express.Router();
+promocoesRouter.use('/', require('./routes/promocoes/adicionar-promo'));
+promocoesRouter.use('/', require('./routes/promocoes/deletar-promo'));
+promocoesRouter.use('/', require('./routes/promocoes/filtrar-promo'));;
 
 // Configurando as rotas
 app.use('/api/auth/', authRoutes); // Rota de autenticação para cadastro e login
@@ -33,9 +34,7 @@ app.use('/api/dashboard', filtrosDashboardRoutes);
 
 app.use('/api/visualizador-clientes', filtrosVisualizadorClientesRoutes);
 
-app.use('/api/promocoes', adicionarPromocaoRouter);
-app.use('/api/promocoes/deletar', deletarPromocaoRouter);
-app.use('/api/promocoes/filtrar', filtrarPromocaoRouter);
+app.use('/api/promocoes', promocoesRouter);
 
 // Inicializando o servidor
 app.listen(PORT, () => {

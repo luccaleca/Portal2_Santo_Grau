@@ -6,11 +6,6 @@ const connectDB = require('../../config/database');
 
 const router = express.Router();
 
-// Verifica e cria a pasta de uploads, se necessário
-const uploadDir = path.join(__dirname, '../../uploads/');
-if (!fs.existsSync(uploadDir)) {
-    fs.mkdirSync(uploadDir, { recursive: true });
-}
 
 // Configuração do Multer para salvar as imagens
 const storage = multer.diskStorage({

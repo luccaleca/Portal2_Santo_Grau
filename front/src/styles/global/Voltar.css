@@ -1,0 +1,12 @@
+.voltar-btn {
+    position: fixed;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+  }
+  
+  .content-container {
+    margin-left: 100px; /* Ajuste conforme necessário para dar espaço ao botão */
+    padding: 20px;
+  }
+  
